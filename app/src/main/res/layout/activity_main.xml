@@ -11,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Hai Binarian,"
+        android:layout_marginTop="10dp"
+        android:text="Hai Arvy,"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,11 +34,12 @@
         android:id="@+id/textmenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
         android:text="List Menu Makanan"
         android:textColor="@android:color/black"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/friesimage" />
 
@@ -47,8 +48,8 @@
         android:id="@+id/friestxt"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Fries"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +60,7 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Chicken"
         app:layout_constraintStart_toStartOf="@id/friestxt"
@@ -70,7 +71,7 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Sushi"
         app:layout_constraintStart_toStartOf="@id/chickentxt"
@@ -81,7 +82,7 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="Dimsum"
@@ -92,7 +93,7 @@
         android:id="@+id/user"
         android:layout_width="33dp"
         android:layout_height="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,17 +102,27 @@
     <ImageView
         android:layout_width="33dp"
         android:layout_height="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/trolley"
         app:layout_constraintEnd_toStartOf="@id/user"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_width="33dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/baseline_grid_view_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dimsumtxt" />
 
     <ImageView
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
         android:src="@drawable/img_4"
@@ -123,7 +134,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/banner" />
@@ -133,7 +144,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img_3"
         app:layout_constraintStart_toStartOf="@id/friesimage"
         app:layout_constraintTop_toBottomOf="@id/banner" />
@@ -143,7 +154,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img_5"
         app:layout_constraintStart_toStartOf="@id/chickenimage"
         app:layout_constraintTop_toBottomOf="@id/banner" />
@@ -153,7 +164,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img"
         app:layout_constraintStart_toStartOf="@id/sushiimage"
         app:layout_constraintTop_toBottomOf="@id/banner" />
@@ -166,20 +177,23 @@
         app:layout_constraintTop_toBottomOf="@id/textmenu" />
 
     <LinearLayout
+        android:id="@+id/gabungan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textmenu">
 
         <ImageView
             android:id="@+id/ayambakarimg"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="130dp"
             android:src="@drawable/img_6"
             android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="1dp"/>
 
         <TextView
             android:id="@+id/ayambakartxt"
@@ -188,61 +202,103 @@
             android:layout_marginTop="4dp"
             android:text="Ayam Bakar"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Rp.28.000"
+            android:layout_marginTop="1dp"
+            android:text="Rp.40.000"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/img_7"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textmenu" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Cheese Burger"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp.28.000"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textmenu">
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vector">
 
         <ImageView
-            android:id="@+id/ayambakarimg"
-            android:layout_width="130dp"
+            android:layout_width="100dp"
             android:layout_height="130dp"
-            android:src="@drawable/img_6"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"/>
+            android:src="@drawable/img_8"
+            android:layout_marginEnd="dp"
+            android:layout_marginTop="1dp"/>
 
         <TextView
-            android:id="@+id/ayambakartxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Ayam Bakar"
+            android:text="Strawberry Milk"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Rp.28.000"
+            android:layout_marginTop="1dp"
+            android:text="Rp.25.000"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/img_9"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Spicy Chicken Wings"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp.35.000"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
